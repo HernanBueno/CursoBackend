@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+    <div id="mensajes"></div>
+    <div id="mensajestpl" style="display: none;">
+        {{#each messages}}
+        <div>
+            <strong> {{this.author}}:</strong>
+            <em>{{this.message}}</em>
+        </div>
+        {{/each}}
+    </div>
+    <form action="">
+        <div>
+            <input type="text" placeholder="Author" name="author">
+            <input type="text" placeholder="Message" name="message">
+            <button>Enviar</button>
+        </div>
+    </form>
+
+
+
+    <script src="/js/main.js"></script>
+
+</body>
+
+</html>
