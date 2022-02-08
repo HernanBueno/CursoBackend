@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+    <form id="formularioProd" action="http://localhost:3000/productos" method="POST">
+        <label for="title">Nombre del producto</label>
+        <input type="text" name="title" id="title" required>
+        <label for="price">Precio</label>
+        <input type="number" name="price" id="price" required>
+        <label for="thumbnail">Link a imagen</label>
+        <input type="text" name="thumbnail" id="thumbnail" required>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <div id="productos"></div>
+    <div id="prodtpl" style="display: none;">
+    </div>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
