@@ -52,7 +52,36 @@ module.exports = class Carrito {
         return false;
     }
 
+    //eliminar producto del carrito
 
+    eliminarProducto(idC, idProd) {
+        if (idC != undefined && idProd != undefined) {
+            let posicionCar = Carrito.arrCarritos.findIndex(c => c.id === idC);
+            if (posicionCar > -1) {
+                let posicionProd = Carrito.arrCarritos[posicionCar].productos.findIndex(p => p.idProd === idProd);
 
+                if (posicionProd > -1) {
+                    Carrito.arrCarritos[posicionCar].productos.splice(posicionProd, 1)
+                    return true
+                } else {
+                    console.log('el producto no existe en el carrito')
+                    return false;
 
+                }
+            }
+            return false
+        }
+    }
+
+    //eliminar carrito
+    eliminarCarrito(idC) {
+        if (idC != undefined && typeof(idC) === 'number') {
+            let pos = Carrito.arrCarritos.findIndex(c => c.id === idC);
+            if (pos > -1) {
+                Carrito.arrCarritos.splice(pos, 1);
+                return true;
+            }
+        }
+        return false;
+    }
 }

@@ -33,7 +33,7 @@ module.exports = class producto {
             objP.thumbnail != undefined &&
             objP.thumbnail != ""
         ) {
-            let id = this.#getMaxId();
+            let id = this.getMaxId();
             id++;
             objP.id = id;
 
