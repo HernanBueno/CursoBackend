@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const productoClase = require('../modules/producto');
-const isAdmin = require("./middlewares/usertype")
+const isAdmin = require("../middlewares/usertype")
 
 const producto1 = new productoClase();
 
