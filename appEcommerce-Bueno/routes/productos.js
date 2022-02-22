@@ -1,14 +1,20 @@
 const express = require("express");
 const router = express.Router();
-const productoClase = require('../modules/producto');
-const isAdmin = require("../middlewares/usertype")
+const productoClase = require('../modules/producto.js');
+
 
 const producto1 = new productoClase();
 
 
+const isAdmin = (req, res, next) => {
+    if (req.body.id_admin) { next() } else {
+        res.json({
+            error: "Esta operacion necesita permisos de administrador"
+        });
+    }
+};
 
-
-
+router.use(isAdmin);
 /* GET users listing. */
 router.get("/", function(req, res, next) {
     res.status(200).json(producto1.getProductos());
@@ -28,7 +34,7 @@ router.get("/:idP", (req, res) => {
     }
 });
 
-router.post("/", isAdmin, (req, res) => {
+router.post("/", (req, res) => {
     let objProducto = {...req.body };
     let objProductoNuevo = producto.setProducto(objProducto);
     objProductoNuevo != null ?
@@ -38,7 +44,7 @@ router.post("/", isAdmin, (req, res) => {
         .json({ error: "Error al querer agregar el nuevo producto" });
 });
 
-router.put("/idP", isAdmin, (req, res) => {
+router.put("/idP", (req, res) => {
     let idProducto = parseInt(req.params.idP);
     let objProducto = {...req.body };
 
@@ -51,7 +57,7 @@ router.put("/idP", isAdmin, (req, res) => {
         .json({ error: `No se encontró el producto con id: ${idProducto}` });
 });
 
-router.delete("/:idP", isAdmin, (req, res) => {
+router.delete("/:idP", (req, res) => {
     let idProducto = parseInt(req.params.idP);
 
     producto.deleteProducto(idProducto) ?
