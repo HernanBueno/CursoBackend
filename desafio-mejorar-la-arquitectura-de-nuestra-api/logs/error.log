@@ -1,0 +1,2 @@
+2022-06-05T20:18:16.631Z [product-controller] error: Cannot read properties of undefined (reading 'getAll')
+2022-06-05T20:20:27.252Z [product-controller] error: Cannot read properties of undefined (reading 'getAll')
