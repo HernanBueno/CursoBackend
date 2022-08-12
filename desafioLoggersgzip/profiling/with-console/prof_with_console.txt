@@ -1,0 +1,1230 @@
+Statistical profiling result from prof_with_console.log, (26558 ticks, 35 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+  17231   64.9%          /usr/local/bin/node
+    115    0.4%          /lib/x86_64-linux-gnu/libc-2.28.so
+      5    0.0%          /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25
+      3    0.0%          [vdso]
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     85    0.3%    0.9%  LazyCompile: *recurse /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/babel-walk/lib/index.js:73:26
+     46    0.2%    0.5%  LazyCompile: *walkAST /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-walk/index.js:4:17
+     45    0.2%    0.5%  LazyCompile: *readString /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:3019:13
+     38    0.1%    0.4%  LazyCompile: *callLexerFunction /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1635:30
+     37    0.1%    0.4%  LazyCompile: *parseChar /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/character-parser/index.js:76:19
+     20    0.1%    0.2%  LazyCompile: *readWord1 /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:3253:12
+     20    0.1%    0.2%  LazyCompile: *readInt /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:2781:10
+     17    0.1%    0.2%  LazyCompile: *recurse /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/babel-walk/lib/index.js:110:26
+     13    0.0%    0.1%  LazyCompile: *parseExprAtom /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:12801:16
+     13    0.0%    0.1%  LazyCompile: *getTokenFromCode /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:2495:19
+     13    0.0%    0.1%  LazyCompile: *advance /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1656:20
+     13    0.0%    0.1%  LazyCompile: *Identifier /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/with/lib/globals.js:137:15
+     12    0.0%    0.1%  LazyCompile: *parseMaybeUnary /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:12442:18
+     12    0.0%    0.1%  LazyCompile: *parseMaybeAssign /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:12181:19
+     12    0.0%    0.1%  LazyCompile: *nextToken /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:2009:12
+     12    0.0%    0.1%  LazyCompile: *Parser /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/acorn/dist/acorn.js:470:31
+     11    0.0%    0.1%  LazyCompile: *visitTag /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-code-gen/index.js:613:21
+     11    0.0%    0.1%  LazyCompile: *resolve node:path:1091:10
+     10    0.0%    0.1%  LazyCompile: *visitBlock /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-code-gen/index.js:420:23
+     10    0.0%    0.1%  LazyCompile: *serializeInto /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/bson/lib/parser/serializer.js:550:23
+     10    0.0%    0.1%  LazyCompile: *parseExprSubscripts /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:12536:22
+     10    0.0%    0.1%  LazyCompile: *buffer /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-code-gen/index.js:203:19
+     10    0.0%    0.1%  LazyCompile: *attributeValue /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1312:27
+      9    0.0%    0.1%  LazyCompile: *readEscapedChar /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:3145:18
+      9    0.0%    0.1%  LazyCompile: *next /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:1913:7
+      8    0.0%    0.1%  LazyCompile: *parseUntil /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/character-parser/index.js:47:20
+      8    0.0%    0.1%  LazyCompile: *parseExprOp /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:12300:14
+      7    0.0%    0.1%  RegExp: ^(Named)?Block$
+      7    0.0%    0.1%  LazyCompile: *pp$9.getTokenFromCode /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/acorn/dist/acorn.js:4635:35
+      7    0.0%    0.1%  LazyCompile: *isConstant /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/constantinople/lib/index.js:332:20
+      7    0.0%    0.1%  LazyCompile: *initializeScopes /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:4129:19
+      7    0.0%    0.1%  LazyCompile: *findGlobals /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/with/lib/globals.js:166:21
+      7    0.0%    0.1%  LazyCompile: *each /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1042:17
+      7    0.0%    0.1%  LazyCompile: *bufferExpression /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-code-gen/index.js:241:29
+      6    0.0%    0.1%  LazyCompile: *tag /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-parser/index.js:1133:16
+      6    0.0%    0.1%  LazyCompile: *finishNodeAt /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:4294:15
+      6    0.0%    0.1%  LazyCompile: *emit node:events:340:44
+      6    0.0%    0.1%  LazyCompile: *addExtra /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:3922:11
+      5    0.0%    0.1%  RegExp: ^default
+      5    0.0%    0.1%  LazyCompile: *skipSpace /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:2080:12
+      5    0.0%    0.1%  LazyCompile: *normalizeString node:path:66:25
+      5    0.0%    0.1%  LazyCompile: *indent /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1487:19
+      5    0.0%    0.1%  LazyCompile: *id /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:443:15
+      5    0.0%    0.1%  LazyCompile: *default /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:902:20
+      5    0.0%    0.1%  LazyCompile: *attrs /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1440:18
+      5    0.0%    0.1%  LazyCompile: *Tokenizer /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:1896:14
+      4    0.0%    0.0%  LazyCompile: *while /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1023:18
+      4    0.0%    0.0%  LazyCompile: *when /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:873:17
+      4    0.0%    0.0%  LazyCompile: *toConstant /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/constantinople/lib/index.js:9:24
+      4    0.0%    0.0%  LazyCompile: *pp$9.nextToken /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/acorn/dist/acorn.js:4391:28
+      4    0.0%    0.0%  LazyCompile: *parseExprOpRightExpr /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:12369:23
+      4    0.0%    0.0%  LazyCompile: *consume /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:184:20
+      4    0.0%    0.0%  LazyCompile: *attribute /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1216:22
+      4    0.0%    0.0%  Function: ^readFileSync node:fs:450:22
+      4    0.0%    0.0%  Function: ^pug_classes_array /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-runtime/index.js:63:27
+      3    0.0%    0.0%  RegExp: ^when +([^:\n]+)
+      3    0.0%    0.0%  RegExp: ^\n( *)
+      3    0.0%    0.0%  RegExp: ^(\w(?:[-:\w]*\w)?)
+      3    0.0%    0.0%  RegExp: ["&<>]
+      3    0.0%    0.0%  LazyCompile: *startNode /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:4278:12
+      3    0.0%    0.0%  LazyCompile: *parseStatementContent /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:14536:24
+      3    0.0%    0.0%  LazyCompile: *parseBlockOrModuleBlockBody /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:15170:30
+      3    0.0%    0.0%  LazyCompile: *parse /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/character-parser/index.js:28:15
+      3    0.0%    0.0%  LazyCompile: *nextTick node:internal/process/task_queues:104:18
+      3    0.0%    0.0%  LazyCompile: *mixinBlock /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:794:23
+      3    0.0%    0.0%  LazyCompile: *isExpression /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/is-expression/index.js:14:22
+      3    0.0%    0.0%  LazyCompile: *interpolation /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:369:26
+      3    0.0%    0.0%  LazyCompile: *include /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:818:20
+      3    0.0%    0.0%  LazyCompile: *get node:internal/streams/duplex:94:8
+      3    0.0%    0.0%  LazyCompile: *finishToken /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:2189:14
+      3    0.0%    0.0%  LazyCompile: *filter /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:411:19
+      3    0.0%    0.0%  LazyCompile: *extends /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:683:20
+      3    0.0%    0.0%  LazyCompile: *eachOf /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1088:19
+      3    0.0%    0.0%  LazyCompile: *case /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:855:17
+      3    0.0%    0.0%  LazyCompile: *attrs /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-parser/index.js:1270:18
+      3    0.0%    0.0%  LazyCompile: *allowInAnd /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:14228:13
+      3    0.0%    0.0%  LazyCompile: *<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:111:35
+      3    0.0%    0.0%  LazyCompile: *<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/connect-mongo/build/main/lib/MongoStore.js:236:10
+      3    0.0%    0.0%  Function: ^session /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express-session/index.js:179:26
+      3    0.0%    0.0%  Function: ^<anonymous> :6:15
+      2    0.0%    0.0%  RegExp: ^include\b
+      2    0.0%    0.0%  RegExp: ^extends?(?= |$|\n)
+      2    0.0%    0.0%  RegExp: ^case +([^\n]+)
+      2    0.0%    0.0%  RegExp: ^block +([^\n]+)
+      2    0.0%    0.0%  RegExp: ^\n[ \t]*\n
+      2    0.0%    0.0%  RegExp: ^\.([_a-z0-9\-]*[_a-z][_a-z0-9\-]*)
+      2    0.0%    0.0%  RegExp: ^(?:break|case|catch|continue|debugger|default|do|else|finally|for|function|if|return|switch|throw|try|var|while|with|null|true|false|instanceof|typeof|void|delete|new|in|this|const|class|extends|export|import|super)$
+      2    0.0%    0.0%  RegExp: ^(?:block +)?prepend +([^\n]+)
+      2    0.0%    0.0%  RegExp: [ \n\t]
+      2    0.0%    0.0%  RegExp: ; *([!#$%&'*+.^_`|~0-9A-Za-z-]+) *= *("(?:[\u000b\u0020\u0021\u0023-\u005b\u005d-\u007e\u0080-\u00ff]|\\[\u000b\u0020-\u00ff])*"|[!#$%&'*+.^_`|~0-9A-Za-z-]+) *
+      2    0.0%    0.0%  RegExp: (?:\s|\/\/.*|\/\*[^]*?\*\/)*
+      2    0.0%    0.0%  LazyCompile: *yield /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:806:18
+      2    0.0%    0.0%  LazyCompile: *walk.includeDependencies /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-filters/lib/handle-filters.js:14:13
+      2    0.0%    0.0%  LazyCompile: *validateString node:internal/validators:117:24
+      2    0.0%    0.0%  LazyCompile: *tokEnd /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:146:19
+      2    0.0%    0.0%  LazyCompile: *toReferencedListDeep /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:11802:23
+      2    0.0%    0.0%  LazyCompile: *toAssignable /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:11597:15
+      2    0.0%    0.0%  LazyCompile: *tag /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:391:16
+      2    0.0%    0.0%  LazyCompile: *pug_escape /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-runtime/index.js:200:20
+      2    0.0%    0.0%  LazyCompile: *processTicksAndRejections node:internal/process/task_queues:68:35
+      2    0.0%    0.0%  LazyCompile: *pp$3.parseMaybeUnary /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/acorn/dist/acorn.js:2087:34
+      2    0.0%    0.0%  LazyCompile: *pp$3.parseExprAtom /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/acorn/dist/acorn.js:2223:32
+      2    0.0%    0.0%  LazyCompile: *pluginsMap /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:16408:20
+      2    0.0%    0.0%  LazyCompile: *parseNullLiteral /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:13251:19
+      2    0.0%    0.0%  LazyCompile: *parseLiteralAtNode /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:13208:21
+      2    0.0%    0.0%  LazyCompile: *parseLiteral /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:13216:15
+      2    0.0%    0.0%  LazyCompile: *parseExpressionBase /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:12147:22
+      2    0.0%    0.0%  LazyCompile: *parseExpr /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-parser/index.js:219:22
+      2    0.0%    0.0%  LazyCompile: *next /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express/lib/router/index.js:176:16
+      2    0.0%    0.0%  LazyCompile: *isReferenced /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/types/lib/validators/isReferenced.js:8:22
+      2    0.0%    0.0%  LazyCompile: *get /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/types/lib/index.js:623:19
+      2    0.0%    0.0%  LazyCompile: *finishNode /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:4290:13
+      2    0.0%    0.0%  LazyCompile: *dirname node:path:1275:10
+      2    0.0%    0.0%  LazyCompile: *concat node:buffer:535:32
+      2    0.0%    0.0%  LazyCompile: *compileAttrs /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-attrs/index.js:22:22
+      2    0.0%    0.0%  LazyCompile: *checkReservedWord /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:13992:20
+      2    0.0%    0.0%  LazyCompile: *checkLVal /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:11955:12
+      2    0.0%    0.0%  LazyCompile: *call /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:920:17
+      2    0.0%    0.0%  LazyCompile: *blockCode /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1203:22
+      2    0.0%    0.0%  LazyCompile: *blank /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:337:18
+      2    0.0%    0.0%  LazyCompile: *attributesBlock /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1467:28
+      2    0.0%    0.0%  LazyCompile: *addAttribute /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-attrs/index.js:54:24
+      2    0.0%    0.0%  LazyCompile: *Writable.write node:internal/streams/writable:333:36
+      2    0.0%    0.0%  LazyCompile: *Module._nodeModulePaths node:internal/modules/cjs/loader:629:37
+      2    0.0%    0.0%  Function: ^statSync node:fs:1528:18
+      2    0.0%    0.0%  Function: ^messageHandler /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/cmap/connection.js:416:35
+      2    0.0%    0.0%  Function: ^incrementLine /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:161:26
+      2    0.0%    0.0%  Function: ^get node:net:1706:6
+      2    0.0%    0.0%  Function: ^deserializeObject /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/bson/lib/parser/deserializer.js:65:27
+      2    0.0%    0.0%  Function: ^applyStyle /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@colors/colors/lib/colors.js:113:20
+      2    0.0%    0.0%  Function: ^allocate node:buffer:397:18
+      2    0.0%    0.0%  Function: ^UpdateOneOperation /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/operations/update.js:64:16
+      1    0.0%    0.0%  RegExp: ^while\b
+      1    0.0%    0.0%  RegExp: ^mixin +([-\w]+)(?: *\((.*)\))? *
+      1    0.0%    0.0%  RegExp: ^extends?\b
+      1    0.0%    0.0%  RegExp: ^each\b
+      1    0.0%    0.0%  RegExp: ^default\b
+      1    0.0%    0.0%  RegExp: ^block
+      1    0.0%    0.0%  RegExp: ^\/login\/?$
+      1    0.0%    0.0%  RegExp: ^\/api\/productos\/?(?=\/|$)
+      1    0.0%    0.0%  RegExp: ^\.[_a-z0-9\-]+
+      1    0.0%    0.0%  RegExp: ^\.
+      1    0.0%    0.0%  RegExp: ^[\^_`a-zA-Z\-0-9!#$%&'*+.|~]+$
+      1    0.0%    0.0%  RegExp: ^- *(?:each|for) +([a-zA-Z_$][\w$]*)(?: *, *([a-zA-Z_$][\w$]*))? +of +([^\n]+)
+      1    0.0%    0.0%  RegExp: ^- *(?:each|for) +([a-zA-Z_$][\w$]*)(?: *, *([a-zA-Z_$][\w$]*))? +in +([^\n]+)
+      1    0.0%    0.0%  RegExp: ^(if|unless|else if|else)\b([^\n]*)
+      1    0.0%    0.0%  RegExp: ^(?:each|for) +([a-zA-Z_$][\w$]*)(?: *, *([a-zA-Z_$][\w$]*))? * in *([^\n]+)
+      1    0.0%    0.0%  RegExp: ^(?:each|for) (.*?) of *([^\n]+)
+      1    0.0%    0.0%  RegExp: ^((?:(?:[0-9a-fA-F]{1,4}):){7}(?:(?:[0-9a-fA-F]{1,4})|:)|(?:(?:[0-9a-fA-F]{1,4}):){6}(?:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|:(?:[0-9a-fA-F]{1,4})|:)|(?:(?:[0-9a-fA-F]{1,4}):){5}(?::((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,2}|:)|(?:(?:[0-9a-fA-F]{1,4}):){4}(?:(:(?:[0-9a-fA-F]{1,4})){0,1}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,3}|:)|(?:(?:[0-9a-fA-F]{1,4}):){3}(?:(:(?:[0-9a-fA-F]{1,4})){0,2}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,4}|:)|(?:(?:[0-9a-fA-F]{1,4}):){2}(?:(:(?:[0-9a-fA-F]{1,4})){0,3}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,5}|:)|(?:(?:[0-9a-fA-F]{1,4}):){1}(?:(:(?:[0-9a-fA-F]{1,4})){0,4}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,6}|:)|(?::((?::(?:[0-9a-fA-F]{1,4})){0,5}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(?::(?:[0-9a-fA-F]{1,4})){1,7}|:)))(%[0-9a-zA-Z-.:]{1,})?$
+      1    0.0%    0.0%  RegExp: ^#
+      1    0.0%    0.0%  RegExp: \r\n|\r
+      1    0.0%    0.0%  RegExp: [^\t\x20-\x7e\x80-\xff]
+      1    0.0%    0.0%  RegExp: ['"]
+      1    0.0%    0.0%  LazyCompile: *write node:buffer:592:12
+      1    0.0%    0.0%  LazyCompile: *visit /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-code-gen/index.js:292:18
+      1    0.0%    0.0%  LazyCompile: *tokenOperatorPrecedence /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:1352:33
+      1    0.0%    0.0%  LazyCompile: *tok /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:121:16
+      1    0.0%    0.0%  LazyCompile: *stringify /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/js-stringify/index.js:4:19
+      1    0.0%    0.0%  LazyCompile: *startNodeAt /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:4282:14
+      1    0.0%    0.0%  LazyCompile: *slice node:buffer:593:12
+      1    0.0%    0.0%  LazyCompile: *shallowEqual /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/constantinople/lib/index.js:247:22
+      1    0.0%    0.0%  LazyCompile: *serializeLong /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/bson/lib/parser/serializer.js:300:23
+      1    0.0%    0.0%  LazyCompile: *remove node:internal/linkedlist:15:16
+      1    0.0%    0.0%  LazyCompile: *realpathSync node:fs:2408:22
+      1    0.0%    0.0%  LazyCompile: *readableAddChunk node:internal/streams/readable:236:26
+      1    0.0%    0.0%  LazyCompile: *readToken_question /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:2476:21
+      1    0.0%    0.0%  LazyCompile: *readSync node:fs:684:18
+      1    0.0%    0.0%  LazyCompile: *processIncomingData /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/cmap/message_stream.js:79:29
+      1    0.0%    0.0%  LazyCompile: *processComment /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:1592:17
+      1    0.0%    0.0%  LazyCompile: *prepend /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:701:20
+      1    0.0%    0.0%  LazyCompile: *pp$9.readWord1 /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/acorn/dist/acorn.js:5069:28
+      1    0.0%    0.0%  LazyCompile: *pp$6.finishNode /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/acorn/dist/acorn.js:3067:29
+      1    0.0%    0.0%  LazyCompile: *pp$3.parseSubscript /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/acorn/dist/acorn.js:2163:33
+      1    0.0%    0.0%  LazyCompile: *parseText /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-parser/index.js:297:22
+      1    0.0%    0.0%  LazyCompile: *parseNumericLiteral /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:13225:22
+      1    0.0%    0.0%  LazyCompile: *parseExprListItem /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:13918:20
+      1    0.0%    0.0%  LazyCompile: *parseCode /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-parser/index.js:520:22
+      1    0.0%    0.0%  LazyCompile: *ondata node:internal/streams/readable:752:18
+      1    0.0%    0.0%  LazyCompile: *normalize node:path:1127:12
+      1    0.0%    0.0%  LazyCompile: *mixin /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:968:18
+      1    0.0%    0.0%  LazyCompile: *join node:path:1166:7
+      1    0.0%    0.0%  LazyCompile: *isExpression /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:75:25
+      1    0.0%    0.0%  LazyCompile: *initBlock /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-parser/index.js:161:22
+      1    0.0%    0.0%  LazyCompile: *getTokens /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1704:22
+      1    0.0%    0.0%  LazyCompile: *extname node:path:1385:10
+      1    0.0%    0.0%  LazyCompile: *expect /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-parser/index.js:136:19
+      1    0.0%    0.0%  LazyCompile: *eos /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:317:16
+      1    0.0%    0.0%  LazyCompile: *endInterpolation /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:492:29
+      1    0.0%    0.0%  LazyCompile: *dot /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:670:16
+      1    0.0%    0.0%  LazyCompile: *doctype /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:431:20
+      1    0.0%    0.0%  LazyCompile: *createWriteWrap node:internal/stream_base_commons:113:25
+      1    0.0%    0.0%  LazyCompile: *cpus node:os:133:14
+      1    0.0%    0.0%  LazyCompile: *conditional /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:984:24
+      1    0.0%    0.0%  LazyCompile: *codePointAtPos /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:1980:17
+      1    0.0%    0.0%  LazyCompile: *clearBuffer node:internal/streams/writable:529:21
+      1    0.0%    0.0%  LazyCompile: *block /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:763:18
+      1    0.0%    0.0%  LazyCompile: *before /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-linker/index.js:73:28
+      1    0.0%    0.0%  LazyCompile: *before /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-linker/index.js:135:20
+      1    0.0%    0.0%  LazyCompile: *applyPlugins /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:43:22
+      1    0.0%    0.0%  LazyCompile: *append /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:732:19
+      1    0.0%    0.0%  LazyCompile: *alignPool node:buffer:158:19
+      1    0.0%    0.0%  LazyCompile: *advance /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-parser/index.js:72:20
+      1    0.0%    0.0%  LazyCompile: *addText /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:499:20
+      1    0.0%    0.0%  LazyCompile: *Writable.write /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/readable-stream/lib/_stream_writable.js:288:37
+      1    0.0%    0.0%  LazyCompile: *Scope /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:3402:14
+      1    0.0%    0.0%  LazyCompile: *Position /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:21:14
+      1    0.0%    0.0%  LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      1    0.0%    0.0%  LazyCompile: *Long.negate /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/bson/lib/long.js:612:38
+      1    0.0%    0.0%  LazyCompile: *Long.isLong /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/bson/lib/long.js:236:28
+      1    0.0%    0.0%  LazyCompile: *Long /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/bson/lib/long.js:58:18
+      1    0.0%    0.0%  LazyCompile: *Hash node:internal/crypto/hash:58:14
+      1    0.0%    0.0%  LazyCompile: *ArrowHeadParsingScope /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:3742:14
+      1    0.0%    0.0%  LazyCompile: *<anonymous> :6:15
+      1    0.0%    0.0%  LazyCompile: *<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-linker/index.js:193:21
+      1    0.0%    0.0%  LazyCompile: *<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express/lib/router/index.js:635:19
+      1    0.0%    0.0%  Function: ^writeend /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express-session/index.js:260:24
+      1    0.0%    0.0%  Function: ^walkAST /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-walk/index.js:4:17
+      1    0.0%    0.0%  Function: ^update node:internal/crypto/hash:95:40
+      1    0.0%    0.0%  Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      1    0.0%    0.0%  Function: ^toString node:buffer:782:46
+      1    0.0%    0.0%  Function: ^toReferencedListDeep /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:11802:23
+      1    0.0%    0.0%  Function: ^toConstant /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/constantinople/lib/index.js:9:24
+      1    0.0%    0.0%  Function: ^stringifyFnReplacer /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/safe-stable-stringify/index.js:203:32
+      1    0.0%    0.0%  Function: ^stringify /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/js-stringify/index.js:4:19
+      1    0.0%    0.0%  Function: ^startSession /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/sdam/topology.js:336:17
+      1    0.0%    0.0%  Function: ^setTimeout node:timers:140:20
+      1    0.0%    0.0%  Function: ^setStreamTimeout node:internal/stream_base_commons:254:26
+      1    0.0%    0.0%  Function: ^set maxAge /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express-session/session/cookie.js:83:13
+      1    0.0%    0.0%  Function: ^resolveBSONOptions /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/bson.js:53:28
+      1    0.0%    0.0%  Function: ^require node:internal/modules/cjs/helpers:101:31
+      1    0.0%    0.0%  Function: ^recurse /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/babel-walk/lib/index.js:73:26
+      1    0.0%    0.0%  Function: ^realpathSync node:fs:2408:22
+      1    0.0%    0.0%  Function: ^readWord1 /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:3253:12
+      1    0.0%    0.0%  Function: ^readPreferenceServerSelector /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/sdam/server_selection.js:188:38
+      1    0.0%    0.0%  Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      1    0.0%    0.0%  Function: ^readHexChar /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:3236:14
+      1    0.0%    0.0%  Function: ^read node:internal/modules/package_json_reader:16:14
+      1    0.0%    0.0%  Function: ^processWaitQueue /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/cmap/connection_pool.js:418:26
+      1    0.0%    0.0%  Function: ^processIncomingData /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/cmap/message_stream.js:79:29
+      1    0.0%    0.0%  Function: ^pp$3.parseExpression /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/acorn/dist/acorn.js:1961:34
+      1    0.0%    0.0%  Function: ^pp$3.checkUnreserved /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/acorn/dist/acorn.js:2837:34
+      1    0.0%    0.0%  Function: ^parseTag /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-parser/index.js:1111:21
+      1    0.0%    0.0%  Function: ^parseParenAndDistinguishExpression /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:13257:37
+      1    0.0%    0.0%  Function: ^parse /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/node_modules/mongodb/lib/cmap/commands.js:577:10
+      1    0.0%    0.0%  Function: ^parse /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/cmap/commands.js:577:10
+      1    0.0%    0.0%  Function: ^openSync node:fs:576:18
+      1    0.0%    0.0%  Function: ^ondata node:internal/streams/readable:752:18
+      1    0.0%    0.0%  Function: ^onceWrapper node:events:504:21
+      1    0.0%    0.0%  Function: ^onParserExecute node:_http_server:633:25
+      1    0.0%    0.0%  Function: ^ok node:assert:410:12
+      1    0.0%    0.0%  Function: ^next /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express/lib/router/index.js:176:16
+      1    0.0%    0.0%  Function: ^newAsyncId node:internal/async_hooks:415:20
+      1    0.0%    0.0%  Function: ^log /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/winston/lib/winston/transports/console.js:44:6
+      1    0.0%    0.0%  Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+      1    0.0%    0.0%  Function: ^listenerCount node:events:722:23
+      1    0.0%    0.0%  Function: ^link /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-linker/index.js:11:14
+      1    0.0%    0.0%  Function: ^isWhitespace /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:1760:22
+      1    0.0%    0.0%  Function: ^isUint32 node:internal/validators:39:18
+      1    0.0%    0.0%  Function: ^isInt32 node:internal/validators:35:17
+      1    0.0%    0.0%  Function: ^internalBinding node:internal/bootstrap/loaders:164:45
+      1    0.0%    0.0%  Function: ^handleFilters /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-filters/lib/handle-filters.js:10:23
+      1    0.0%    0.0%  Function: ^getStatsFromBinding node:internal/fs/utils:530:29
+      1    0.0%    0.0%  Function: ^getSourceMapsEnabled node:internal/source_map/source_map_cache:43:30
+      1    0.0%    0.0%  Function: ^getPositiveIntegerOption /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/safe-stable-stringify/index.js:161:35
+      1    0.0%    0.0%  Function: ^getOptions node:internal/fs/utils:314:20
+      1    0.0%    0.0%  Function: ^getOptions /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-load/index.js:111:20
+      1    0.0%    0.0%  Function: ^getDefaultTriggerAsyncId node:internal/async_hooks:431:34
+      1    0.0%    0.0%  Function: ^get waitQueueSize /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/cmap/connection_pool.js:98:22
+      1    0.0%    0.0%  Function: ^get length /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/utils.js:950:15
+      1    0.0%    0.0%  Function: ^get description /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/cmap/connection.js:69:20
+      1    0.0%    0.0%  Function: ^get /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/readable-stream/lib/_stream_duplex.js:120:20
+      1    0.0%    0.0%  Function: ^fromStringFast node:buffer:412:24
+      1    0.0%    0.0%  Function: ^fromOptions /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/explain.js:24:23
+      1    0.0%    0.0%  Function: ^fastparse /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/parseurl/index.js:95:20
+      1    0.0%    0.0%  Function: ^expect /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-parser/index.js:136:19
+      1    0.0%    0.0%  Function: ^executeWithServerSelection /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/operations/execute_operation.js:65:36
+      1    0.0%    0.0%  Function: ^entitytag /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/etag/index.js:39:20
+      1    0.0%    0.0%  Function: ^ensureBuffer /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/bson/lib/ensure_buffer.js:15:22
+      1    0.0%    0.0%  Function: ^dispatch /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express/lib/router/route.js:98:45
+      1    0.0%    0.0%  Function: ^currentFlags /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:3896:15
+      1    0.0%    0.0%  Function: ^createError /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/http-errors/index.js:49:22
+      1    0.0%    0.0%  Function: ^compileFunction node:vm:308:25
+      1    0.0%    0.0%  Function: ^callback node:internal/streams/writable:550:44
+      1    0.0%    0.0%  Function: ^attributeBlocks /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-code-gen/index.js:987:28
+      1    0.0%    0.0%  Function: ^assignSocket node:_http_server:239:62
+      1    0.0%    0.0%  Function: ^assertEncoding node:internal/fs/utils:151:24
+      1    0.0%    0.0%  Function: ^applySession /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/sessions.js:628:22
+      1    0.0%    0.0%  Function: ^allowInAnd /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:14228:13
+      1    0.0%    0.0%  Function: ^allocUnsafe node:buffer:372:42
+      1    0.0%    0.0%  Function: ^afterWriteTick node:internal/streams/writable:482:24
+      1    0.0%    0.0%  Function: ^afterWrite node:internal/streams/writable:487:20
+      1    0.0%    0.0%  Function: ^addWith /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/with/lib/index.js:40:17
+      1    0.0%    0.0%  Function: ^addChunk /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/readable-stream/lib/_stream_readable.js:295:18
+      1    0.0%    0.0%  Function: ^_write node:internal/streams/writable:283:16
+      1    0.0%    0.0%  Function: ^WritableState.onwrite /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/readable-stream/lib/_stream_writable.js:159:27
+      1    0.0%    0.0%  Function: ^Writable.uncork node:internal/streams/writable:341:37
+      1    0.0%    0.0%  Function: ^Stats._checkModeProperty node:internal/fs/utils:517:46
+      1    0.0%    0.0%  Function: ^StatementParser /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:14436:1
+      1    0.0%    0.0%  Function: ^SessionStrategy.authenticate /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/passport/lib/strategies/session.js:45:50
+      1    0.0%    0.0%  Function: ^Module._resolveLookupPaths node:internal/modules/cjs/loader:667:38
+      1    0.0%    0.0%  Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1    0.0%    0.0%  Function: ^LValParser /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:11596:1
+      1    0.0%    0.0%  Function: ^ClientSession /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/sessions.js:54:16
+      1    0.0%    0.0%  Function: ^<anonymous> node:vm:313:27
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/validators:221:42
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/fs/utils:357:35
+      1    0.0%    0.0%  Function: ^<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/src/services/logger.js:4:29
+      1    0.0%    0.0%  Function: ^<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/sdam/server_selection.js:192:12
+      1    0.0%    0.0%  Function: ^<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/operations/update.js:71:40
+      1    0.0%    0.0%  Function: ^<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/operations/execute_operation.js:16:48
+      1    0.0%    0.0%  Function: ^<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/operations/execute_operation.js:147:61
+      1    0.0%    0.0%  Function: ^<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/connect-flash/lib/flash.js:18:18
+
+ [C++]:
+   ticks  total  nonlib   name
+   3209   12.1%   34.9%  syscall
+   1692    6.4%   18.4%  __write
+    900    3.4%    9.8%  __lll_lock_wait
+    763    2.9%    8.3%  epoll_pwait
+    756    2.8%    8.2%  __libc_open
+    368    1.4%    4.0%  __pthread_cond_wait
+    138    0.5%    1.5%  __libc_read
+    118    0.4%    1.3%  __read
+     24    0.1%    0.3%  __pthread_cond_signal
+     24    0.1%    0.3%  __libc_malloc
+     21    0.1%    0.2%  __mprotect
+     17    0.1%    0.2%  __lll_unlock_wake
+     15    0.1%    0.2%  writev
+     15    0.1%    0.2%  __libc_write
+     13    0.0%    0.1%  _IO_file_xsputn
+      8    0.0%    0.1%  _IO_fwrite
+      5    0.0%    0.1%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)
+      5    0.0%    0.1%  __libc_free
+      4    0.0%    0.0%  __lseek
+      3    0.0%    0.0%  std::ostream::sentry::sentry(std::ostream&)
+      3    0.0%    0.0%  operator new(unsigned long)
+      3    0.0%    0.0%  fputc
+      3    0.0%    0.0%  __GI___pthread_mutex_lock
+      3    0.0%    0.0%  _IO_vfscanf
+      3    0.0%    0.0%  _IO_vfprintf
+      3    0.0%    0.0%  _IO_file_sync
+      2    0.0%    0.0%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const
+      2    0.0%    0.0%  std::ostream::sentry::~sentry()
+      2    0.0%    0.0%  std::ostream& std::ostream::_M_insert<long>(long)
+      2    0.0%    0.0%  epoll_ctl
+      2    0.0%    0.0%  __pthread_cond_broadcast
+      2    0.0%    0.0%  __GI___pthread_rwlock_wrlock
+      2    0.0%    0.0%  __GI___pthread_mutex_unlock
+      2    0.0%    0.0%  _IO_file_write
+      1    0.0%    0.0%  std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, unsigned long) const
+      1    0.0%    0.0%  std::__detail::_Prime_rehash_policy::_M_next_bkt(unsigned long) const
+      1    0.0%    0.0%  std::__detail::_Prime_rehash_policy::_M_need_rehash(unsigned long, unsigned long, unsigned long) const
+      1    0.0%    0.0%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)
+      1    0.0%    0.0%  shutdown
+      1    0.0%    0.0%  operator delete(void*)
+      1    0.0%    0.0%  getsockopt
+      1    0.0%    0.0%  getrusage
+      1    0.0%    0.0%  __pthread_mutex_unlock_usercnt
+      1    0.0%    0.0%  __mmap
+      1    0.0%    0.0%  __libc_realloc
+      1    0.0%    0.0%  __fxstat
+      1    0.0%    0.0%  __close_nocancel
+      1    0.0%    0.0%  __GI___pthread_rwlock_unlock
+      1    0.0%    0.0%  _IO_sputbackc
+
+ [Summary]:
+   ticks  total  nonlib   name
+   1022    3.8%   11.1%  JavaScript
+   8147   30.7%   88.5%  C++
+   1756    6.6%   19.1%  GC
+  17354   65.3%          Shared libraries
+     35    0.1%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+   3209   55.7%   12.1%  syscall
+   1330   23.1%    5.0%  __write
+    756   13.1%    2.8%  __libc_open
+    132    2.3%    0.5%  __libc_read
+    118    2.0%    0.4%  __read
+     77    1.3%    0.3%  __lll_lock_wait
+     19    0.3%    0.1%  __libc_malloc
+     18    0.3%    0.1%  __mprotect
+     15    0.3%    0.1%  writev
+     13    0.2%    0.0%  __libc_write
+     11    0.2%    0.0%  _IO_file_xsputn
+     10    0.2%    0.0%  __pthread_cond_signal
+      8    0.1%    0.0%  _IO_fwrite
+      4    0.1%    0.0%  __lseek
+      3    0.1%    0.0%  std::ostream::sentry::sentry(std::ostream&)
+      3    0.1%    0.0%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)
+      3    0.1%    0.0%  operator new(unsigned long)
+      3    0.1%    0.0%  __libc_free
+      3    0.1%    0.0%  _IO_vfscanf
+      3    0.1%    0.0%  _IO_vfprintf
+      3    0.1%    0.0%  _IO_file_sync
+      2    0.0%    0.0%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const
+      2    0.0%    0.0%  std::ostream::sentry::~sentry()
+      2    0.0%    0.0%  std::ostream& std::ostream::_M_insert<long>(long)
+      2    0.0%    0.0%  __lll_unlock_wake
+      2    0.0%    0.0%  __GI___pthread_rwlock_wrlock
+      2    0.0%    0.0%  _IO_file_write
+      1    0.0%    0.0%  std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, unsigned long) const
+      1    0.0%    0.0%  std::__detail::_Prime_rehash_policy::_M_need_rehash(unsigned long, unsigned long, unsigned long) const
+      1    0.0%    0.0%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)
+      1    0.0%    0.0%  operator delete(void*)
+      1    0.0%    0.0%  fputc
+      1    0.0%    0.0%  __pthread_mutex_unlock_usercnt
+      1    0.0%    0.0%  __fxstat
+      1    0.0%    0.0%  __close_nocancel
+      1    0.0%    0.0%  __GI___pthread_rwlock_unlock
+      1    0.0%    0.0%  __GI___pthread_mutex_unlock
+      1    0.0%    0.0%  __GI___pthread_mutex_lock
+      1    0.0%    0.0%  _IO_sputbackc
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+  17231   64.9%  /usr/local/bin/node
+  14563   84.5%    /usr/local/bin/node
+   3125   21.5%      Function: ^stat node:internal/modules/cjs/loader:151:14
+   1703   54.5%        Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+   1672   98.2%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+   1672  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+     31    1.8%          LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:848:35
+     23   74.2%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      8   25.8%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:757:24
+   1405   45.0%        Function: ^tryFile node:internal/modules/cjs/loader:384:17
+   1300   92.5%          Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+   1128   86.8%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+    149   11.5%            Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+     22    1.7%            LazyCompile: ~tryPackage node:internal/modules/cjs/loader:338:20
+     88    6.3%          Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+     52   59.1%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+     36   40.9%            LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+   2446   16.8%      Function: ^openSync node:fs:576:18
+   2442   99.8%        Function: ^readFileSync node:fs:450:22
+   1309   53.6%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+   1192   91.1%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+    117    8.9%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+    587   24.0%          Function: ^read /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-load/index.js:84:26
+    586   99.8%            Function: ^read /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:155:19
+    476   19.5%          Function: ^handleTemplateCache /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:236:29
+    476  100.0%            Function: ^exports.renderFile /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:436:30
+     41    1.7%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1110:37
+     37   90.2%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      4    9.8%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:969:33
+   2127   14.6%      Function: ^compileFunction node:vm:308:25
+   2114   99.4%        Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+   2113  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+   2055   97.3%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+     58    2.7%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1110:37
+   1128    7.7%      Function: ^statSync node:fs:1528:18
+   1123   99.6%        Function: ^tryStat /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express/lib/view.js:174:17
+   1115   99.3%          Function: ^resolve /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express/lib/view.js:146:42
+   1115  100.0%            Function: ^lookup /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express/lib/view.js:104:40
+    998    6.9%      Function: ^closeSync node:fs:526:19
+    997   99.9%        Function: ^readFileSync node:fs:450:22
+    506   50.8%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+    465   91.9%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+     41    8.1%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+    242   24.3%          Function: ^read /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-load/index.js:84:26
+    241   99.6%            Function: ^read /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:155:19
+    219   22.0%          Function: ^handleTemplateCache /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:236:29
+    219  100.0%            Function: ^exports.renderFile /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:436:30
+     16    1.6%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1110:37
+     11   68.8%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      5   31.3%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:969:33
+    466    3.2%      Function: ^read node:internal/modules/package_json_reader:16:14
+    434   93.1%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+    213   49.1%          Function: ^resolveExports node:internal/modules/cjs/loader:472:24
+    213  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+    114   26.3%          Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+    110   96.5%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      4    3.5%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1110:37
+     72   16.6%          LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+     72  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+     29    6.7%          Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+     19   65.5%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+     10   34.5%            LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+     32    6.9%        LazyCompile: *readPackageScope node:internal/modules/cjs/loader:321:26
+     32  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+     32  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+    445    3.1%      Function: ^realpathSync node:fs:2408:22
+    439   98.7%        Function: ^toRealPath node:internal/modules/cjs/loader:393:20
+    413   94.1%          Function: ^tryFile node:internal/modules/cjs/loader:384:17
+    353   85.5%            Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+     39    9.4%            Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+     13    3.1%            LazyCompile: ~tryPackage node:internal/modules/cjs/loader:338:20
+      8    1.9%            LazyCompile: ~finalizeEsmResolution node:internal/modules/cjs/loader:939:31
+     18    4.1%          Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+     16   88.9%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      2   11.1%            LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      8    1.8%          LazyCompile: ~tryFile node:internal/modules/cjs/loader:384:17
+      7   87.5%            LazyCompile: ~finalizeEsmResolution node:internal/modules/cjs/loader:939:31
+      1   12.5%            LazyCompile: ~tryExtensions node:internal/modules/cjs/loader:400:23
+      6    1.3%        LazyCompile: ~toRealPath node:internal/modules/cjs/loader:393:20
+      4   66.7%          LazyCompile: ~tryFile node:internal/modules/cjs/loader:384:17
+      3   75.0%            LazyCompile: ~tryExtensions node:internal/modules/cjs/loader:400:23
+      1   25.0%            LazyCompile: ~finalizeEsmResolution node:internal/modules/cjs/loader:939:31
+      2   33.3%          LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      2  100.0%            LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:848:35
+    283    1.9%      LazyCompile: *callLexerFunction /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1635:30
+    270   95.4%        LazyCompile: *advance /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1656:20
+    241   89.3%          LazyCompile: *getTokens /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1704:22
+    241  100.0%            Function: ^lex /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:10:13
+     29   10.7%          LazyCompile: *callLexerFunction /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1635:30
+     29  100.0%            Function: ^getTokens /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1704:22
+      7    2.5%        Function: ^assertExpression /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:81:29
+      3   42.9%          LazyCompile: *code /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1132:17
+      3  100.0%            LazyCompile: *callLexerFunction /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1635:30
+      3   42.9%          LazyCompile: *attributeValue /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1312:27
+      3  100.0%            LazyCompile: *attribute /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1216:22
+      1   14.3%          Function: ^code /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1132:17
+      1  100.0%            LazyCompile: *callLexerFunction /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1635:30
+      3    1.1%        Function: ^getTokens /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1704:22
+      2   66.7%          Function: ^lex /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:10:13
+      2  100.0%            Function: ^lex /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:85:18
+      1   33.3%          LazyCompile: ~lex /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:10:13
+      1  100.0%            LazyCompile: ~lex /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:85:18
+      3    1.1%        Function: ^advance /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1656:20
+      3  100.0%          LazyCompile: *callLexerFunction /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1635:30
+      3  100.0%            Function: ^getTokens /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1704:22
+    279    1.9%      Function: ^tryStatSync node:fs:404:21
+    279  100.0%        Function: ^readFileSync node:fs:450:22
+    136   48.7%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+    126   92.6%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+     10    7.4%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+     74   26.5%          Function: ^read /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-load/index.js:84:26
+     74  100.0%            Function: ^read /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:155:19
+     61   21.9%          Function: ^handleTemplateCache /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:236:29
+     61  100.0%            Function: ^exports.renderFile /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:436:30
+      5    1.8%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      5  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+    267    1.8%      Function: ^lex /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:10:13
+    267  100.0%        Function: ^lex /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:85:18
+    209   78.3%          Function: ^loadString /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-load/index.js:49:34
+     98   46.9%            LazyCompile: *<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-load/index.js:13:28
+     89   42.6%            Function: ^compileBody /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:77:21
+     21   10.0%            Function: ^<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-load/index.js:13:28
+     58   21.7%          LazyCompile: *compileBody /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:77:21
+     58  100.0%            Function: ^exports.compile /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:264:27
+    236    1.6%      Function: ^readSync node:fs:684:18
+    236  100.0%        Function: ^tryReadSync node:fs:429:21
+    236  100.0%          Function: ^readFileSync node:fs:450:22
+    143   60.6%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+     42   17.8%            Function: ^read /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-load/index.js:84:26
+     38   16.1%            Function: ^handleTemplateCache /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:236:29
+      8    3.4%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1110:37
+    191    1.3%      Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+    154   80.6%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+     27   17.5%          Function: ~<anonymous> node:crypto:1:1
+     27  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     17   11.0%          Function: ~<anonymous> node:internal/child_process:1:1
+     17  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     15    9.7%          Function: ~<anonymous> node:http:1:1
+     15  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     12    7.8%          Function: ~<anonymous> node:tls:1:1
+     12  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      8    5.2%          Function: ~<anonymous> node:_http_client:1:1
+      8  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      7    4.5%          Function: ~<anonymous> node:internal/cluster/primary:1:1
+      7  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      7    4.5%          Function: ~<anonymous> node:assert:1:1
+      7  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      6    3.9%          LazyCompile: ~lazyRequire node:internal/crypto/util:67:21
+      6  100.0%            LazyCompile: ~get node:crypto:287:8
+      6    3.9%          Function: ~<anonymous> node:internal/crypto/hkdf:1:1
+      6  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      6    3.9%          Function: ~<anonymous> node:child_process:1:1
+      6  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      6    3.9%          Function: ~<anonymous> node:_tls_wrap:1:1
+      6  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      4    2.6%          LazyCompile: ~lazyLoadStreams node:fs:2841:25
+      4  100.0%            LazyCompile: ~get ReadStream node:fs:2984:17
+      4    2.6%          Function: ~<anonymous> node:_tls_common:1:1
+      4  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3    1.9%          Function: ~<anonymous> node:internal/crypto/pbkdf2:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3    1.9%          Function: ~<anonymous> node:_http_common:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    1.3%          LazyCompile: ~get node:dns:334:8
+      2  100.0%            /usr/local/bin/node
+      2    1.3%          LazyCompile: ~get BlockList node:net:1779:16
+      2  100.0%            /usr/local/bin/node
+      2    1.3%          LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:41:35
+      2  100.0%            LazyCompile: ~getStdout node:internal/bootstrap/switches/is_main_thread:121:19
+      2    1.3%          Function: ~<anonymous> node:tty:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    1.3%          Function: ~<anonymous> node:net:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    1.3%          Function: ~<anonymous> node:internal/crypto/util:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    1.3%          Function: ~<anonymous> node:internal/crypto/cipher:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    1.3%          Function: ~<anonymous> node:dns:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    1.3%          Function: ~<anonymous> node:cluster:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     26   13.6%        Function: ^compileForPublicLoader node:internal/bootstrap/loaders:246:25
+     26  100.0%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+     26  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+     11    5.8%        LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:246:25
+     11  100.0%          LazyCompile: ~loadNativeModule node:internal/modules/cjs/helpers:44:26
+     11  100.0%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:757:24
+    184    1.3%      /usr/local/bin/node
+     82   44.6%        LazyCompile: *Parser /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/acorn/dist/acorn.js:470:31
+     64   78.0%          LazyCompile: *isExpression /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/is-expression/index.js:14:22
+     64  100.0%            Function: ^isExpression /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:75:25
+     11   13.4%          Function: ^isExpression /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/is-expression/index.js:14:22
+     11  100.0%            Function: ^isExpression /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:75:25
+      7    8.5%          LazyCompile: *isExpression /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:75:25
+      6   85.7%            LazyCompile: *attributeValue /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1312:27
+      1   14.3%            LazyCompile: *callLexerFunction /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1635:30
+      7    3.8%        LazyCompile: *readNumber /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:2885:13
+      7  100.0%          LazyCompile: *getTokenFromCode /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:2495:19
+      7  100.0%            LazyCompile: *nextToken /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/parser/lib/index.js:2009:12
+      7    3.8%        LazyCompile: *blank /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:337:18
+      7  100.0%          LazyCompile: *advance /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1656:20
+      7  100.0%            LazyCompile: *getTokens /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1704:22
+      5    2.7%        Function: ^unwrapReturns /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/with/lib/index.js:127:23
+      5  100.0%          Function: ^addWith /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/with/lib/index.js:40:17
+      5  100.0%            Function: ^compile /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-code-gen/index.js:109:20
+      5    2.7%        Function: ^getOptions /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-load/index.js:111:20
+      4   80.0%          Function: ^load /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-load/index.js:9:14
+      3   75.0%            Function: ^loadString /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-load/index.js:49:34
+      1   25.0%            LazyCompile: *compileBody /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:77:21
+      1   20.0%          Function: ^loadString /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-load/index.js:49:34
+      1  100.0%            Function: ^compileBody /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:77:21
+      4    2.2%        LazyCompile: *<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/connect-mongo/build/main/lib/MongoStore.js:236:10
+      4  100.0%          Function: ^set /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/connect-mongo/build/main/lib/MongoStore.js:234:8
+      4  100.0%            Function: ^save /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express-session/session/session.js:71:54
+      4    2.2%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      3   75.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      1   33.3%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1   33.3%            Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      1   33.3%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1   25.0%          LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      4    2.2%        Function: ^databaseNamespace /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/utils.js:516:27
+      4  100.0%          Function: ^Msg /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/cmap/commands.js:468:16
+      4  100.0%            Function: ^command /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/cmap/connection.js:162:12
+      3    1.6%        Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      3  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      3  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      2    1.1%        LazyCompile: *stringifyFnReplacer /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/safe-stable-stringify/index.js:203:32
+      2  100.0%          LazyCompile: *stringifyFnReplacer /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/safe-stable-stringify/index.js:203:32
+      2  100.0%            Function: ^stringify /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/safe-stable-stringify/index.js:594:22
+      2    1.1%        LazyCompile: *processTicksAndRejections node:internal/process/task_queues:68:35
+      2    1.1%        LazyCompile: *<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-load/index.js:13:28
+      2  100.0%          LazyCompile: *walkAST /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-walk/index.js:4:17
+      2  100.0%            LazyCompile: *walkAST /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-walk/index.js:4:17
+      2    1.1%        Function: ^stat node:internal/modules/cjs/loader:151:14
+      2  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      2  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      2    1.1%        Function: ^parseQueryStringValues /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/qs/lib/parse.js:50:50
+      2  100.0%          Function: ^module.exports /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/qs/lib/parse.js:237:27
+      2  100.0%            Function: ^parseExtendedQueryString /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express/lib/utils.js:288:34
+      2    1.1%        Function: ^expressInit /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express/lib/middleware/init.js:29:30
+      1   50.0%          LazyCompile: *handle /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            Function: ^trim_prefix /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express/lib/router/index.js:288:23
+      1   50.0%          Function: ^handle /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            Function: ^trim_prefix /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express/lib/router/index.js:288:23
+      2    1.1%        Function: ^checkInvalidHeaderChar node:_http_common:232:32
+      2  100.0%          Function: ^<anonymous> node:_http_outgoing:564:45
+      2  100.0%            Function: ^setHeader node:_http_outgoing:574:57
+      2    1.1%        Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      2  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      2  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+    164    1.1%      Function: ^parse /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-parser/index.js:10:15
+    164  100.0%        Function: ^parse /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:110:20
+    141   86.0%          Function: ^loadString /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-load/index.js:49:34
+     70   49.6%            Function: ^compileBody /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:77:21
+     61   43.3%            LazyCompile: *<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-load/index.js:13:28
+     10    7.1%            Function: ^<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-load/index.js:13:28
+     23   14.0%          LazyCompile: *compileBody /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:77:21
+     23  100.0%            Function: ^exports.compile /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:264:27
+
+   3209   12.1%  syscall
+   1517   47.3%    LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+   1517  100.0%      Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+   1211   79.8%        Function: ^Module._load node:internal/modules/cjs/loader:757:24
+   1211  100.0%          Function: ^Module.require node:internal/modules/cjs/loader:997:36
+   1211  100.0%            Function: ^require node:internal/modules/cjs/helpers:101:31
+    306   20.2%        LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+    306  100.0%          Function: ^Module.require node:internal/modules/cjs/loader:997:36
+    306  100.0%            Function: ^require node:internal/modules/cjs/helpers:101:31
+   1314   40.9%    LazyCompile: *realpathSync node:fs:2408:22
+    801   61.0%      Function: ^toRealPath node:internal/modules/cjs/loader:393:20
+    707   88.3%        Function: ^tryFile node:internal/modules/cjs/loader:384:17
+    572   80.9%          Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+    477   83.4%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+     95   16.6%            Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+    125   17.7%          Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+     78   62.4%            LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+     47   37.6%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+     10    1.4%          LazyCompile: ~finalizeEsmResolution node:internal/modules/cjs/loader:939:31
+      8   80.0%            LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      2   20.0%            Function: ^resolveExports node:internal/modules/cjs/loader:472:24
+     49    6.1%        Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+     49  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+     49  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+     45    5.6%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+     45  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+     35   77.8%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+     10   22.2%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+    513   39.0%      LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+    513  100.0%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+    425   82.8%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+    425  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+     88   17.2%          LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+     88  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+    378   11.8%    LazyCompile: *readFileSync node:fs:450:22
+    206   54.5%      Function: ^read /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-load/index.js:84:26
+    206  100.0%        Function: ^read /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:155:19
+    206  100.0%          LazyCompile: *<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-load/index.js:13:28
+    206  100.0%            LazyCompile: *walkAST /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-walk/index.js:4:17
+    172   45.5%      Function: ^handleTemplateCache /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:236:29
+    172  100.0%        Function: ^exports.renderFile /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:436:30
+    172  100.0%          Function: ^exports.renderFile /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:436:30
+    172  100.0%            Function: ^exports.__express /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:486:29
+
+   1692    6.4%  __write
+   1327   78.4%    /usr/local/bin/node
+     86    6.5%      /usr/local/bin/node
+      4    4.7%        LazyCompile: ~MongoStore /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/connect-mongo/build/main/lib/MongoStore.js:75:16
+      4  100.0%          Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/src/services/mongo.js:1:1
+      4  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      3    3.5%        LazyCompile: *cpus node:os:133:14
+      3  100.0%          Function: ^info /var/src/app/32-logs-profiling-debug-parte-ii/entregable/src/controllers/main.controller.js:11:7
+      3  100.0%            LazyCompile: *handle /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express/lib/router/layer.js:86:49
+      3    3.5%        Function: ^getOwn node:internal/bootstrap/loaders:180:16
+      3  100.0%          Function: ^syncExports node:internal/bootstrap/loaders:287:14
+      2   66.7%            LazyCompile: ~<anonymous> node:internal/bootstrap/loaders:273:15
+      1   33.3%            Function: ^<anonymous> node:internal/bootstrap/loaders:273:15
+      2    2.3%        LazyCompile: ~link /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-linker/index.js:11:14
+      2  100.0%          LazyCompile: ~compileBody /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:77:21
+      2  100.0%            LazyCompile: ~exports.compile /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:264:27
+      2    2.3%        LazyCompile: ~checkServerIdentity node:tls:274:59
+      2  100.0%          LazyCompile: ~onConnectSecure node:_tls_wrap:1516:25
+      2  100.0%            Function: ^emit node:events:340:44
+      2    2.3%        Function: ^<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/lib/helpers/pluralize.js:86:34
+      2  100.0%          /usr/local/bin/node
+      2  100.0%            LazyCompile: ~pluralize /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/lib/helpers/pluralize.js:82:19
+      1    1.2%        LazyCompile: ~walkAST /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-walk/index.js:4:17
+      1  100.0%          LazyCompile: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-walk/index.js:111:33
+      1  100.0%            /usr/local/bin/node
+      1    1.2%        LazyCompile: ~validate_config /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@mapbox/node-pre-gyp/lib/util/versioning.js:195:25
+      1  100.0%          LazyCompile: ~exports.find /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@mapbox/node-pre-gyp/lib/pre-binding.js:17:24
+      1  100.0%            Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/bcrypt/bcrypt.js:1:1
+      1    1.2%        LazyCompile: ~validate /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/aproba/index.js:25:19
+      1  100.0%          LazyCompile: ~module.exports /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/gauge/plumbing.js:6:42
+      1  100.0%            LazyCompile: ~Gauge /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/gauge/index.js:19:16
+      1    1.2%        LazyCompile: ~updateRsNoPrimaryFromMember /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology_description.js:334:37
+      1  100.0%          LazyCompile: ~update /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology_description.js:142:11
+      1  100.0%            LazyCompile: ~serverUpdateHandler /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:366:24
+      1    1.2%        LazyCompile: ~toUSVString node:internal/util:59:21
+      1  100.0%          LazyCompile: ~get node:internal/url:316:6
+      1  100.0%            LazyCompile: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/connection_string.js:88:44
+      1    1.2%        LazyCompile: ~tagsStrictEqual /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/node_modules/mongodb/lib/sdam/server_description.js:173:25
+      1  100.0%          LazyCompile: ~equals /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/node_modules/mongodb/lib/sdam/server_description.js:118:11
+      1  100.0%            LazyCompile: ~serverUpdateHandler /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:366:24
+      1    1.2%        LazyCompile: ~tagsStrictEqual /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/sdam/server_description.js:173:25
+      1  100.0%          LazyCompile: ~equals /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/sdam/server_description.js:118:11
+      1  100.0%            LazyCompile: ~serverUpdateHandler /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/sdam/topology.js:366:24
+      1    1.2%        LazyCompile: ~shouldUseNative /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/object-assign/index.js:21:25
+      1  100.0%          Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/object-assign/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.2%        LazyCompile: ~setup /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/socket.io/node_modules/debug/src/common.js:7:15
+      1  100.0%          Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/socket.io/node_modules/debug/src/node.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.2%        LazyCompile: ~setup /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/engine.io/node_modules/debug/src/common.js:7:15
+      1  100.0%          Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/engine.io/node_modules/debug/src/node.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.2%        LazyCompile: ~set maxAge /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express-session/session/cookie.js:83:13
+      1  100.0%          /usr/local/bin/node
+      1  100.0%            LazyCompile: ~Cookie /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express-session/session/cookie.js:25:46
+      1    1.2%        LazyCompile: ~serializeObjectId /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/bson/lib/parser/serializer.js:208:27
+      1  100.0%          Function: ^serializeInto /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/bson/lib/parser/serializer.js:550:23
+      1  100.0%            Function: ^serializeObject /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/bson/lib/parser/serializer.js:258:25
+      1    1.2%        LazyCompile: ~serialize /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express-session/node_modules/cookie/index.js:101:19
+      1  100.0%          LazyCompile: ~setcookie /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express-session/index.js:655:19
+      1  100.0%            LazyCompile: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express-session/index.js:220:28
+      1    1.2%        LazyCompile: ~scanEndOfLine /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:209:26
+      1  100.0%          LazyCompile: ~doctype /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:431:20
+      1  100.0%            Function: ^callLexerFunction /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1635:30
+      1    1.2%        LazyCompile: ~scan /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:197:17
+      1  100.0%          LazyCompile: ~extends /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:683:20
+      1  100.0%            Function: ^callLexerFunction /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1635:30
+      1    1.2%        LazyCompile: ~promiseOrCallback /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/lib/helpers/promiseOrCallback.js:8:44
+      1  100.0%          LazyCompile: ~Mongoose._promiseOrCallback /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/lib/index.js:1173:49
+      1  100.0%            LazyCompile: ~Mongoose.connect /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/lib/index.js:335:38
+      1    1.2%        LazyCompile: ~processCiphers node:internal/tls/secure-context:91:24
+      1  100.0%          LazyCompile: ~configSecureContext node:internal/tls/secure-context:120:29
+      1  100.0%            LazyCompile: ~createSecureContext node:_tls_common:99:29
+      1    1.2%        LazyCompile: ~prepend /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:701:20
+      1  100.0%          Function: ^callLexerFunction /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1635:30
+      1  100.0%            LazyCompile: ~advance /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1656:20
+      1    1.2%        LazyCompile: ~populateStatusesMap /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/statuses/index.js:60:30
+      1  100.0%          Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/statuses/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.2%        LazyCompile: ~populateMaps /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mime-types/index.js:154:23
+      1  100.0%          Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mime-types/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.2%        LazyCompile: ~parseOpts /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@mapbox/node-pre-gyp/lib/node-pre-gyp.js:144:37
+      1  100.0%          LazyCompile: ~Run /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@mapbox/node-pre-gyp/lib/node-pre-gyp.js:78:13
+      1  100.0%            LazyCompile: ~exports.find /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@mapbox/node-pre-gyp/lib/pre-binding.js:17:24
+      1    1.2%        LazyCompile: ~parseOptions /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/node_modules/mongodb/lib/connection_string.js:211:22
+      1  100.0%          LazyCompile: ~MongoClient /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/node_modules/mongodb/lib/mongo_client.js:60:16
+      1  100.0%            LazyCompile: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/lib/connection.js:781:31
+      1    1.2%        LazyCompile: ~parseOptions /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/connection_string.js:208:22
+      1  100.0%          LazyCompile: ~MongoClient /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/mongo_client.js:60:16
+      1  100.0%            LazyCompile: ~connect /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/mongo_client.js:178:19
+      1    1.2%        LazyCompile: ~parse /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:110:20
+      1  100.0%          LazyCompile: ~loadString /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-load/index.js:49:34
+      1  100.0%            LazyCompile: ~compileBody /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:77:21
+      1    1.2%        LazyCompile: ~parse /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/dotenv/lib/main.js:8:16
+      1  100.0%          LazyCompile: ~config /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/dotenv/lib/main.js:55:17
+      1  100.0%            Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/dotenv/config.js:1:11
+      1    1.2%        LazyCompile: ~parse /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@mapbox/node-pre-gyp/node_modules/nopt/lib/nopt.js:242:16
+      1  100.0%          LazyCompile: ~nopt /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@mapbox/node-pre-gyp/node_modules/nopt/lib/nopt.js:26:15
+      1  100.0%            LazyCompile: ~parseOpts /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@mapbox/node-pre-gyp/lib/node-pre-gyp.js:144:37
+      1    1.2%        LazyCompile: ~match /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express/lib/router/layer.js:110:39
+      1  100.0%          Function: ^matchLayer /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express/lib/router/index.js:578:20
+      1  100.0%            Function: ^next /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express/lib/router/index.js:176:16
+      1    1.2%        LazyCompile: ~id /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:443:15
+      1  100.0%          Function: ^callLexerFunction /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1635:30
+      1  100.0%            LazyCompile: ~advance /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1656:20
+      1    1.2%        LazyCompile: ~h /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/yargs/build/index.cjs:1:1423
+      1  100.0%          LazyCompile: ~addHelpOpt /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/yargs/build/index.cjs:1:28820
+      1  100.0%            LazyCompile: ~help /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/yargs/build/index.cjs:1:29124
+      1    1.2%        LazyCompile: ~getOwn node:internal/bootstrap/loaders:180:16
+      1  100.0%          LazyCompile: ~syncExports node:internal/bootstrap/loaders:287:14
+      1  100.0%            LazyCompile: ~<anonymous> node:internal/bootstrap/loaders:273:15
+      1    1.2%        LazyCompile: ~format /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/content-type/index.js:65:17
+      1  100.0%          LazyCompile: ~setCharset /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express/lib/utils.js:247:41
+      1  100.0%            LazyCompile: ~send /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express/lib/response.js:107:25
+      1    1.2%        LazyCompile: ~forFunctions /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/winston/lib/winston/common.js:32:15
+      1  100.0%          Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/winston/lib/winston.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.2%        LazyCompile: ~execute /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/operations/update.js:22:12
+      1  100.0%          LazyCompile: ~execute /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/operations/update.js:70:12
+      1  100.0%            LazyCompile: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/operations/execute_operation.js:147:61
+      1    1.2%        LazyCompile: ~each /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1042:17
+      1  100.0%          Function: ^callLexerFunction /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1635:30
+      1  100.0%            LazyCompile: ~advance /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1656:20
+      1    1.2%        LazyCompile: ~denodeifyWithoutCount /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/promise/lib/node-extensions.js:49:31
+      1  100.0%          LazyCompile: ~Promise.denodeify /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/promise/lib/node-extensions.js:13:30
+      1  100.0%            Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/jstransformer/index.js:1:1
+      1    1.2%        LazyCompile: ~conditional /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:984:24
+      1  100.0%          Function: ^callLexerFunction /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1635:30
+      1  100.0%            LazyCompile: ~advance /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1656:20
+      1    1.2%        LazyCompile: ~callSiteToString /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/depd/lib/compat/index.js:21:76
+      1  100.0%          LazyCompile: ~get /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/depd/lib/compat/index.js:54:16
+      1  100.0%            Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/depd/index.js:1:1
+      1    1.2%        LazyCompile: ~before /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-linker/index.js:97:20
+      1  100.0%          Function: ^walkAST /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-walk/index.js:4:17
+      1  100.0%            Function: ^<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-walk/index.js:111:33
+      1    1.2%        LazyCompile: ~arrayStrictEqual /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/utils.js:631:26
+      1  100.0%          LazyCompile: ~equals /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/sdam/server_description.js:118:11
+      1  100.0%            LazyCompile: ~serverUpdateHandler /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/sdam/topology.js:366:24
+      1    1.2%        LazyCompile: ~applyCoercions /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/yargs-parser/build/index.cjs:693:32
+      1  100.0%          LazyCompile: ~parse /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/yargs-parser/build/index.cjs:108:10
+      1  100.0%            LazyCompile: ~yargsParser.detailed /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/yargs-parser/build/index.cjs:1041:33
+      1    1.2%        LazyCompile: ~addWith /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/with/lib/index.js:40:17
+      1  100.0%          LazyCompile: ~compile /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-code-gen/index.js:109:20
+      1  100.0%            LazyCompile: ~generateCode /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-code-gen/index.js:31:22
+      1    1.2%        LazyCompile: ~Kareem.filter /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/kareem/index.js:321:35
+      1  100.0%          LazyCompile: ~applyHooks /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/lib/helpers/model/applyHooks.js:32:20
+      1  100.0%            LazyCompile: ~applyHooks /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/lib/helpers/model/applyHooks.js:32:20
+      1    1.2%        LazyCompile: ~ConnectionString /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb-connection-string-url/lib/index.js:82:16
+      1  100.0%          LazyCompile: ~parseOptions /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/node_modules/mongodb/lib/connection_string.js:211:22
+      1  100.0%            LazyCompile: ~MongoClient /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/node_modules/mongodb/lib/mongo_client.js:60:16
+      1    1.2%        LazyCompile: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/yargs-parser/build/index.cjs:809:35
+      1  100.0%          /usr/local/bin/node
+      1  100.0%            LazyCompile: ~extendAliases /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/yargs-parser/build/index.cjs:808:31
+      1    1.2%        LazyCompile: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mquery/node_modules/debug/src/node.js:124:55
+      1  100.0%          /usr/local/bin/node
+      1  100.0%            Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mquery/node_modules/debug/src/node.js:1:1
+      1    1.2%        LazyCompile: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/node_modules/mongodb/lib/connection_string.js:72:39
+      1  100.0%          LazyCompile: ~onresolve node:dns:207:19
+      1    1.2%        LazyCompile: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/lib/helpers/pluralize.js:86:34
+      1  100.0%          /usr/local/bin/node
+      1  100.0%            LazyCompile: ~pluralize /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/lib/helpers/pluralize.js:82:19
+      1    1.2%        LazyCompile: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/logform/colorize.js:37:49
+      1  100.0%          /usr/local/bin/node
+      1  100.0%            LazyCompile: ~addColors /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/logform/colorize.js:36:19
+      1    1.2%        LazyCompile: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@mapbox/node-pre-gyp/node_modules/nopt/lib/nopt.js:58:38
+      1  100.0%          /usr/local/bin/node
+      1  100.0%            LazyCompile: ~clean /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@mapbox/node-pre-gyp/node_modules/nopt/lib/nopt.js:53:16
+      1    1.2%        LazyCompile: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/types/lib/definitions/utils.js:245:10
+      1  100.0%          Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/types/lib/definitions/core.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.2%        LazyCompile: *walkAST /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-walk/index.js:4:17
+      1  100.0%          LazyCompile: *walkAST /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-walk/index.js:4:17
+      1  100.0%            LazyCompile: *walkAST /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-walk/index.js:4:17
+      1    1.2%        LazyCompile: *visitTag /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-code-gen/index.js:613:21
+      1  100.0%          LazyCompile: *visit /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-code-gen/index.js:292:18
+      1  100.0%            Function: ^visitBlock /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-code-gen/index.js:420:23
+      1    1.2%        LazyCompile: *realpathSync node:fs:2408:22
+      1  100.0%          Function: ^toRealPath node:internal/modules/cjs/loader:393:20
+      1  100.0%            Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      1    1.2%        LazyCompile: *Parser /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/acorn/dist/acorn.js:470:31
+      1  100.0%          LazyCompile: *isExpression /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/is-expression/index.js:14:22
+      1  100.0%            Function: ^isExpression /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:75:25
+      1    1.2%        Function: ~<anonymous> node:_tls_wrap:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1    1.2%        Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/ws/lib/websocket.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.2%        Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/winston/lib/winston.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.2%        Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/stack-trace/lib/stack-trace.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.2%        Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/lib/browserDocument.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.2%        Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/connection_string.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.2%        Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express/lib/router/route.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.2%        Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/engine.io-parser/build/cjs/commons.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.2%        Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/babel-walk/lib/explode.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.2%        Function: ^recurse /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/babel-walk/lib/index.js:73:26
+      1  100.0%          Function: ^recurse /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/babel-walk/lib/index.js:73:26
+      1  100.0%            Function: ^recurse /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/babel-walk/lib/index.js:73:26
+      1    1.2%        Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.2%        Function: ^parseConnectOptions /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/cmap/connect.js:196:29
+      1  100.0%          Function: ^parseSslOptions /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/cmap/connect.js:222:25
+      1  100.0%            Function: ^makeConnection /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/cmap/connect.js:241:24
+      1    1.2%        Function: ^insert node:internal/timers:350:16
+      1  100.0%          Function: ^setUnrefTimeout node:internal/timers:372:25
+      1  100.0%            Function: ^setStreamTimeout node:internal/stream_base_commons:254:26
+      1    1.2%        Function: ^consume /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:184:20
+      1  100.0%          LazyCompile: *scan /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:197:17
+      1  100.0%            Function: ^extends /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:683:20
+      1    1.2%        Function: ^attribute /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1216:22
+      1  100.0%          Function: ^attrs /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1440:18
+      1  100.0%            LazyCompile: *callLexerFunction /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-lexer/index.js:1635:30
+      1    1.2%        Function: ^addWith /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/with/lib/index.js:40:17
+      1  100.0%          Function: ^compile /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-code-gen/index.js:109:20
+      1  100.0%            Function: ^generateCode /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-code-gen/index.js:31:22
+     14    1.1%      LazyCompile: ~realpathSync node:fs:2408:22
+     14  100.0%        LazyCompile: ~toRealPath node:internal/modules/cjs/loader:393:20
+     14  100.0%          LazyCompile: ~tryFile node:internal/modules/cjs/loader:384:17
+     12   85.7%            LazyCompile: ~tryPackage node:internal/modules/cjs/loader:338:20
+      2   14.3%            LazyCompile: ~tryExtensions node:internal/modules/cjs/loader:400:23
+     14    1.1%      Function: ^handleErrorFromBinding node:internal/fs/utils:340:32
+     10   71.4%        Function: ^openSync node:fs:576:18
+     10  100.0%          Function: ^readFileSync node:fs:450:22
+      6   60.0%            Function: ^read /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-load/index.js:84:26
+      3   30.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1   10.0%            Function: ^handleTemplateCache /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:236:29
+      3   21.4%        Function: ^statSync node:fs:1528:18
+      3  100.0%          Function: ^tryStat /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express/lib/view.js:174:17
+      3  100.0%            Function: ^resolve /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express/lib/view.js:146:42
+      1    7.1%        Function: ^closeSync node:fs:526:19
+      1  100.0%          Function: ^readFileSync node:fs:450:22
+      1  100.0%            Function: ^read /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-load/index.js:84:26
+
+    900    3.4%  __lll_lock_wait
+     77    8.6%    /usr/local/bin/node
+     11   14.3%      /usr/local/bin/node
+      3   27.3%        Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/types/lib/index.js:1:1
+      3  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      3  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    9.1%        LazyCompile: ~tagsStrictEqual /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/node_modules/mongodb/lib/sdam/server_description.js:173:25
+      1  100.0%          LazyCompile: ~equals /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/node_modules/mongodb/lib/sdam/server_description.js:118:11
+      1  100.0%            LazyCompile: ~serverUpdateHandler /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:366:24
+      1    9.1%        LazyCompile: ~setup /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mquery/node_modules/debug/src/common.js:7:15
+      1  100.0%          Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mquery/node_modules/debug/src/node.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1    9.1%        LazyCompile: ~getOwn node:internal/bootstrap/loaders:180:16
+      1  100.0%          LazyCompile: ~syncExports node:internal/bootstrap/loaders:287:14
+      1  100.0%            LazyCompile: ~<anonymous> node:internal/bootstrap/loaders:273:15
+      1    9.1%        LazyCompile: ~arrayStrictEqual /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/node_modules/mongodb/lib/utils.js:631:26
+      1  100.0%          LazyCompile: ~equals /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/node_modules/mongodb/lib/sdam/server_description.js:118:11
+      1  100.0%            LazyCompile: ~serverUpdateHandler /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:366:24
+      1    9.1%        Function: ~<anonymous> node:internal/crypto/keys:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1    9.1%        Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/types/lib/definitions/placeholders.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    9.1%        Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/types/lib/constants/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    9.1%        Function: ^cookieParser /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/cookie-parser/index.js:44:32
+      1  100.0%          Function: ^handle /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            Function: ^trim_prefix /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express/lib/router/index.js:288:23
+     10   13.0%      Function: ^handleErrorFromBinding node:internal/fs/utils:340:32
+      7   70.0%        Function: ^statSync node:fs:1528:18
+      7  100.0%          Function: ^tryStat /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express/lib/view.js:174:17
+      7  100.0%            Function: ^resolve /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express/lib/view.js:146:42
+      3   30.0%        Function: ^openSync node:fs:576:18
+      3  100.0%          Function: ^readFileSync node:fs:450:22
+      2   66.7%            Function: ^read /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-load/index.js:84:26
+      1   33.3%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      3    3.9%      LazyCompile: ~lookupAndConnect node:net:995:26
+      3  100.0%        LazyCompile: ~Socket.connect node:net:937:36
+      3  100.0%          Function: ^connect node:_tls_wrap:1597:35
+      3  100.0%            LazyCompile: ~makeConnection /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/cmap/connect.js:241:24
+      2    2.6%      LazyCompile: ~validateArrayOfType /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/types/lib/definitions/utils.js:91:29
+      2  100.0%        Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/types/lib/definitions/typescript.js:1:1
+      2  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      2  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      2    2.6%      LazyCompile: ~nextTick node:internal/process/task_queues:104:18
+      2  100.0%        LazyCompile: ~resume /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/readable-stream/lib/_stream_readable.js:902:16
+      2  100.0%          LazyCompile: ~Readable.resume /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/readable-stream/lib/_stream_readable.js:886:38
+      2  100.0%            LazyCompile: ~Readable.on /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/readable-stream/lib/_stream_readable.js:804:34
+      2    2.6%      LazyCompile: ~from node:buffer:295:28
+      1   50.0%        Function: ~<anonymous> node:zlib:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            Function: ^compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      1   50.0%        Function: ~<anonymous> node:internal/fs/rimraf:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      2    2.6%      LazyCompile: ~exports.renderFile /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:436:30
+      2  100.0%        LazyCompile: ~exports.renderFile /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:436:30
+      2  100.0%          LazyCompile: ~exports.__express /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:486:29
+      2  100.0%            LazyCompile: ~render /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express/lib/view.js:133:40
+      2    2.6%      Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/whatwg-url/lib/encoding.js:1:1
+      2  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      2  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      2  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.3%      LazyCompile: ~urlParse node:url:152:18
+      1  100.0%        LazyCompile: ~validate_config /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@mapbox/node-pre-gyp/lib/util/versioning.js:195:25
+      1  100.0%          LazyCompile: ~exports.find /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@mapbox/node-pre-gyp/lib/pre-binding.js:17:24
+      1  100.0%            Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/bcrypt/bcrypt.js:1:1
+      1    1.3%      LazyCompile: ~update /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/sdam/topology_description.js:142:11
+      1  100.0%        LazyCompile: ~serverUpdateHandler /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/sdam/topology.js:366:24
+      1  100.0%          LazyCompile: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/sdam/topology.js:530:53
+      1  100.0%            Function: ^emit node:events:340:44
+      1    1.3%      LazyCompile: ~toPathIfFileURL node:internal/url:1496:25
+      1  100.0%        LazyCompile: ~realpathSync node:fs:2408:22
+      1  100.0%          LazyCompile: ~toRealPath node:internal/modules/cjs/loader:393:20
+      1  100.0%            LazyCompile: ~tryFile node:internal/modules/cjs/loader:384:17
+      1    1.3%      LazyCompile: ~resolve node:path:1091:10
+      1  100.0%        LazyCompile: ~patchProcessObject node:internal/bootstrap/pre_execution:81:28
+      1  100.0%          LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      1  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.3%      LazyCompile: ~realpathSync node:fs:2408:22
+      1  100.0%        LazyCompile: ~toRealPath node:internal/modules/cjs/loader:393:20
+      1  100.0%          LazyCompile: ~tryFile node:internal/modules/cjs/loader:384:17
+      1  100.0%            LazyCompile: ~tryPackage node:internal/modules/cjs/loader:338:20
+      1    1.3%      LazyCompile: ~processCiphers node:internal/tls/secure-context:91:24
+      1  100.0%        LazyCompile: ~configSecureContext node:internal/tls/secure-context:120:29
+      1  100.0%          Function: ^createSecureContext node:_tls_common:99:29
+      1  100.0%            Function: ^connect node:_tls_wrap:1597:35
+      1    1.3%      LazyCompile: ~onStreamRead node:internal/stream_base_commons:171:22
+      1    1.3%      LazyCompile: ~next /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/send/index.js:732:17
+      1  100.0%        Function: ^onstat /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/send/index.js:721:33
+      1  100.0%          Function: ^<anonymous> node:fs:197:10
+      1    1.3%      LazyCompile: ~makeCounter /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/utils.js:467:22
+      1  100.0%        /usr/local/bin/node
+      1  100.0%          Function: ^createConnection /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/cmap/connection_pool.js:356:26
+      1  100.0%            Function: ^processWaitQueue /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongodb/lib/cmap/connection_pool.js:418:26
+      1    1.3%      LazyCompile: ~listOnTimeout node:internal/timers:505:25
+      1  100.0%        Function: ^processTimers node:internal/timers:485:25
+      1    1.3%      LazyCompile: ~initRead node:_tls_wrap:438:18
+      1  100.0%        Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.3%      LazyCompile: ~hasObserver node:internal/perf/observe:474:21
+      1  100.0%        LazyCompile: ~ServerResponse node:_http_server:178:24
+      1  100.0%          LazyCompile: ~parserOnIncoming node:_http_server:852:26
+      1  100.0%            LazyCompile: ~parserOnHeadersComplete node:_http_common:77:33
+      1    1.3%      LazyCompile: ~format node:internal/util/inspect:1879:16
+      1  100.0%        LazyCompile: ~getMessage node:internal/errors:410:20
+      1  100.0%          LazyCompile: ~NodeError node:internal/errors:342:28
+      1  100.0%            Function: ^write_ node:_http_outgoing:730:16
+      1    1.3%      LazyCompile: ~equals /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/node_modules/mongodb/lib/sdam/server_description.js:118:11
+      1  100.0%        LazyCompile: ~serverUpdateHandler /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:366:24
+      1  100.0%          LazyCompile: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:530:53
+      1  100.0%            Function: ^emit node:events:340:44
+      1    1.3%      LazyCompile: ~debuglog node:internal/util/debuglog:71:18
+      1  100.0%        Function: ~<anonymous> node:_http_agent:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1    1.3%      LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:41:35
+      1  100.0%        LazyCompile: ~getStdout node:internal/bootstrap/switches/is_main_thread:121:19
+      1  100.0%          Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/yargs/build/index.cjs:1:1
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.3%      LazyCompile: ~addListener node:events:486:58
+      1  100.0%        LazyCompile: ~setupWarningHandler node:internal/bootstrap/pre_execution:141:29
+      1  100.0%          LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      1  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.3%      LazyCompile: ~View /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express/lib/view.js:52:14
+      1  100.0%        LazyCompile: ~render /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express/lib/application.js:531:29
+      1  100.0%          Function: ^render /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express/lib/response.js:994:29
+      1  100.0%            Function: ^res.render /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express-flash/lib/express-flash.js:26:29
+      1    1.3%      LazyCompile: ~StringDecoder node:string_decoder:71:23
+      1  100.0%        Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/redis-parser/lib/parser.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1    1.3%      LazyCompile: ~Long.fromNumber /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/bson/lib/long.js:130:32
+      1  100.0%        LazyCompile: ~compareTopologyVersion /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/node_modules/mongodb/lib/sdam/server_description.js:184:32
+      1  100.0%          LazyCompile: ~isStaleServerDescription /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:660:34
+      1  100.0%            LazyCompile: ~serverUpdateHandler /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:366:24
+      1    1.3%      LazyCompile: ~Duplex node:internal/streams/duplex:52:16
+      1  100.0%        LazyCompile: ~Socket node:net:283:16
+      1  100.0%          LazyCompile: ~WriteStream node:tty:85:21
+      1  100.0%            LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:41:35
+      1    1.3%      LazyCompile: *emit node:events:340:44
+      1    1.3%      Function: ~<anonymous> node:internal/crypto/webcrypto:1:1
+      1  100.0%        Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1  100.0%            LazyCompile: ~lazyRequire node:internal/crypto/util:67:21
+      1    1.3%      Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/src/services/logger.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.3%      Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/yargs-parser/build/index.cjs:1:1
+      1  100.0%        LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:969:33
+      1    1.3%      Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/socket.io/dist/uws.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.3%      Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/socket.io/dist/socket.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.3%      Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/sift/lib/index.js:5:19
+      1  100.0%        Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/sift/lib/index.js:1:11
+      1  100.0%          Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/sift/lib/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.3%      Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/safe-stable-stringify/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.3%      Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/lib/promise_provider.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.3%      Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/mongoose/lib/internal.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.3%      Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/fecha/lib/fecha.umd.js:5:19
+      1  100.0%        Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/fecha/lib/fecha.umd.js:1:11
+      1  100.0%          Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/fecha/lib/fecha.umd.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1    1.3%      Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/engine.io/node_modules/debug/src/node.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.3%      Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/bson/lib/objectid.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.3%      Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/bson/lib/map.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.3%      Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/babel-walk/lib/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.3%      Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@node-redis/client/dist/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.3%      Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@mapbox/node-pre-gyp/node_modules/semver/classes/range.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.3%      Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/types/lib/definitions/flow.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.3%      Function: ~<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@babel/types/lib/definitions/core.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.3%      Function: ^onlookup node:dns:69:18
+      1    1.3%      Function: ^builder /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/@colors/colors/lib/colors.js:86:33
+      1  100.0%        Function: ^colorize /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/logform/colorize.js:63:11
+      1  100.0%          Function: ^transform /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/logform/colorize.js:92:12
+      1  100.0%            LazyCompile: *Writable.write /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/readable-stream/lib/_stream_writable.js:288:37
+      1    1.3%      Function: ^<anonymous> node:internal/validators:235:42
+      1  100.0%        Function: ^compileFunction node:vm:308:25
+      1  100.0%          Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+
+    763    2.9%  epoll_pwait
+
+    756    2.8%  __libc_open
+    748   98.9%    LazyCompile: *readFileSync node:fs:450:22
+    409   54.7%      Function: ^read /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-load/index.js:84:26
+    409  100.0%        Function: ^read /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:155:19
+    409  100.0%          LazyCompile: *<anonymous> /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-load/index.js:13:28
+    409  100.0%            LazyCompile: *walkAST /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug-walk/index.js:4:17
+    339   45.3%      Function: ^handleTemplateCache /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:236:29
+    339  100.0%        Function: ^exports.renderFile /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:436:30
+    339  100.0%          Function: ^exports.renderFile /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:436:30
+    339  100.0%            Function: ^exports.__express /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/pug/lib/index.js:486:29
+      8    1.1%    LazyCompile: *cpus node:os:133:14
+      8  100.0%      Function: ^info /var/src/app/32-logs-profiling-debug-parte-ii/entregable/src/controllers/main.controller.js:11:7
+      5   62.5%        LazyCompile: *handle /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express/lib/router/layer.js:86:49
+      5  100.0%          Function: ^next /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express/lib/router/route.js:114:16
+      5  100.0%            Function: ^dispatch /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express/lib/router/route.js:98:45
+      3   37.5%        Function: ^handle /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express/lib/router/layer.js:86:49
+      3  100.0%          Function: ^next /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express/lib/router/route.js:114:16
+      3  100.0%            Function: ^dispatch /var/src/app/32-logs-profiling-debug-parte-ii/entregable/node_modules/express/lib/router/route.js:98:45
+
+    368    1.4%  __pthread_cond_wait
+

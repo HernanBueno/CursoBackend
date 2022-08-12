@@ -1,0 +1,18 @@
+2022-04-29T19:45:42.925Z [route] warn: GET /infaasdasd
+2022-04-29T19:45:43.080Z [route] warn: GET /favicon.ico
+2022-04-29T19:46:08.872Z [route] warn: GET /favicon.ico
+2022-04-29T19:46:13.485Z [product-controller] error: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "products"
+2022-04-29T19:46:13.633Z [route] warn: GET /favicon.ico
+2022-04-29T19:52:06.965Z [route] warn: GET /favicon.ico
+2022-04-29T19:52:46.478Z [route] warn: GET /favicon.ico
+2022-04-29T19:53:28.280Z [route] warn: GET /favicon.ico
+2022-04-29T19:54:09.143Z [route] warn: GET /favicon.ico
+2022-04-29T20:10:32.091Z [route] warn: GET /favicon.ico
+2022-04-29T20:10:35.551Z [route] warn: GET /favicon.ico
+2022-05-05T02:10:11.160Z [route] warn: GET /favicon.ico
+2022-05-05T02:10:19.402Z [route] warn: GET /favicon.ico
+2022-05-05T02:13:21.972Z [route] warn: GET /favicon.ico
+2022-05-05T02:13:28.380Z [route] warn: GET /favicon.ico
+2022-05-05T02:19:31.747Z [route] warn: GET /favicon.ico
+2022-05-05T02:20:44.883Z [route] warn: GET /favicon.ico
+2022-05-05T02:20:49.508Z [route] warn: GET /favicon.ico
